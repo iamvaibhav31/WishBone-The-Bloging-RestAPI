@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta htto-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="httos://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="httos://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="httos://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="httos://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    {% comment %} <link rel="stylesheet" href="htto://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- THIS LINE -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="htto://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="httos://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> {% endcomment %}
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+    <title>WishBone Rest API</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="https://www.svgrepo.com/show/261816/blogger.svg" class="bi me-2" width="40" height="32">
+          {% comment %} https://www.svgrepo.com/show/261816/blogger.svg {% endcomment %}
+          <span class="fs-4">Simple header</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+
+        </ul>
+      </header>
+    </div>
+
+    <div class="container">
+
+        <div class="bg-image position-relative ">
+            <img
+              src="httos://mdbootstrap.com/img/new/standard/city/053.jpg"
+              class="w-100"
+              alt="Louvre Museum"
+            />
+
+            <div class="mask position-absolute top-0 end-0 bottom-0 start-0 " style="background-color: rgba(0, 0, 0, 0.6)">
+              <div class="text d-flex justify-content-md-center align-items-center h-100">
+                <div class="flex-column bd-highlight text-center">
+                    <h1 class="text-white">Welcome to the WishBone!<h1>
+                    <div class="m-1 text-center">
+                      <div class="box-1">
+                        <a class="text-white btn btn-dark pl-3 pr-3" href="#aboutus" >Get Started!</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr class="border border-danger border-2 opacity-50 m-0 p-0">
+        
+        <div id="aboutus" >
+
+            <h1 class="display-5 text-center mt-4">About Us</h1>
+            <div class="mt-2 mb-4" style="width:15%; margin: 0 auto;">
+              <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; margin: 0 auto;">
+              <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; width:80%; margin: 0 auto;">
+              <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; width:60%; margin: 0 auto;">
+            </div>
+
+            <div class="row g-0 bg-light position-relative">
+                <div class="col-md-4 mb-md-0 p-md-4">
+                  <img src="httos://cdn.pixabay.com/photo/2020/04/03/06/35/work-4997565_960_720.png" class="w-100" alt="...">
+                </div>
+                <div class="col-md-8 p-4 ps-md-0">
+                  <h5 class="mt-0">WishBone: The Blogging  Website</h5>
+                  <p>Blogging is a collection of skills that one needs to run and supervise a blog. This entails equipping a web page with tools to make the process of writing, posting, linking, and sharing content easier on the internet.There are many reasons to start a blog for personal use and only a handful of strong ones for business blogging. Blogging for business, projects, or anything else that might bring you money has a very straightforward purpose – to rank your website higher in Google SERPs, a.k.a. increase your visibility.</p>
+                  <ul class="">
+                    <li class="">The Aim of Project is User can Add Blog With Simple Steps and
+                      Monetizing the blog in just one click</li>
+                    <li class="">Built a Responsive React Website with the help on bootstrap and
+                      integrated with TinyMCE that help the user to add blog through any
+                      medium phone , laptop etc</li>
+                    <li class="">Using Django Restframwork for creating a Rest API or EndPoints to Insert
+                      , Delete , Update and JWT authanticate and use NoSQL Database Like
+                      MongoDB to Store User Data</li>
+                    <li class="">To integrate React.js to Endpoint or RestAPI we use Axios and for State
+                      Management we use Context API</li>
+
+                  </ul>
+                </div>
+              </div>
+
+        </div>
+
+        <div id="services">
+          <h1 class="display-5 text-center mt-4">Services</h1>
+          <div class="mt-2 mb-4" style="width:15%; margin: 0 auto;">
+            <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; margin: 0 auto;">
+            <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; width:80%; margin: 0 auto;">
+            <hr class="border border-danger border-2 opacity-50 mt-1 rounded-2" style="height:2px; width:60%; margin: 0 auto;">
+          </div>
+            <p class="text-center">There are many reasons to start a blog for personal use and only a handful of strong ones for business blogging. Blogging for business, projects, or anything else that might bring you money has a very straightforward purpose – to rank your website higher in Google SERPs, a.k.a. increase your visibility.</p>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th class="text-center display-6">EndPoints</th>
+                <th class="text-center display-6">Type</th>
+                <th class="text-center display-6">Requirements</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% comment %} register user {% endcomment %}
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Register User</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Authentication</p>
+                </td>
+                <td>
+                  <p class="">For registered new user you have to provide diffrent information in a <mark>JSON</mark> formate which are: </p>
+                  <ul class="">
+                    <li class="">first_name</li>
+                    <li class="">last_name</li>
+                    <li class="">username</li>
+                    <li class="">email</li>
+                    <li class="">password</li>
+                    <li class="">password2</li>
+                  </ul>
+                  <p class=""><mark>Note</mark>: The keys of JSON data must have exactly the same and password2 is similar to comfirm password</p>
+                </td>
+              </tr>
+              {% comment %} register end {% endcomment %}
+
+              {% comment %} login user {% endcomment %}
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center ">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Login User</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Authentication</p>
+                </td>
+                <td>
+                  <p class="">For Login users you have to provide some information in a <mark>JSON</mark> formate which are: </p>
+                  <ul class="">
+                    <li class="">username</li>
+                    <li class="">password</li>
+                  </ul>
+                  <p class=""><mark>Note</mark>: The keys of JSON data must have exactly the same and in the responce of api. api while return <mark>Access Token</mark> and <mark>Refresh Token</mark></p>
+                  <p class=""><mark>Access Token</mark>: which is an artifact that client applications can use to make secure calls to an API server. When a client application needs to access protected resources on a server on behalf of a user, the access token lets the client signal to the server that it has received authorization by the user to perform certain tasks or access certain resources. </p>
+                  <p class=""><mark>Refresh Token</mark>: access tokens may be valid for a short amount of time. Once they expire, client applications can use a refresh token to "refresh" the access token. That is, a refresh token is a credential artifact that lets a client application get new access tokens without having to ask the user to log in again. </p>
+                </td>
+              </tr>
+              {% comment %} login endcomment {% endcomment %}
+
+              {% comment %} refresh token {% endcomment %}
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Refresh Token</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Authentication</p>
+                </td>
+                <td>
+                  <p class="">For new access token and refresh token for the user you have to provide diffrent information in a <mark>JSON</mark> formate which are: </p>
+                  <ul class="">
+                    <li class="">refreshtoken</li>
+                  </ul>
+                  <p class=""><mark>Note</mark>: The keys of JSON data must have exactly the same and in responce you get new access tokens and refresh token</p>
+                </td>
+              </tr>
+              {% comment %} refresh end {% endcomment %}
+              {% comment %} post details start {% endcomment %}
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Posts List Veiw</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post</p>
+                </td>
+                <td>
+                  <p class="">For seeing diffrent posts created by diffrent creator in <mark>JSON</mark> formate with specific data,such as title ,thumbnail url , content etc. </p>
+                </td>
+              </tr>
+              {% comment %} post details end {% endcomment %}
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Creating Posts</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post</p>
+                </td>
+                <td>
+                  <p class="">For seeing diffrent posts created by diffrent creator in <mark>JSON</mark> formate with specific data,such as title ,thumbnail url , content etc. </p>
+                  <ul class="">
+                    <li class="">author</li>
+                    <li class="">thumbnail_url</li>
+                    <li class="">title</li>
+                    <li class="">categories</li>
+                    <li class="">excerpt</li>
+                    <li class="">content</li>
+                    <li class="">status</li>
+                  </ul>
+                  <p class=""><mark>Note</mark>: You did not have to provide author by your self it automaticly came when you <mark> decode Access Token </mark> came with login all by him self and For creating new blog you have to <mark> provide access token in headers</mark></p>
+                  <p class=''> To give some data in categories you have some of the options we have :</p>
+                  <ul class="">
+                    <li class="">World</li>
+                    <li class="">Enviroment</li>
+                    <li class="">Design</li>
+                    <li class="">Culture</li>
+                    <li class="">Business</li>
+                    <li class="">Politics</li>
+                    <li class="">Opinion</li>
+                    <li class="">Science</li>
+                    <li class="">Style</li>
+                    <li class="">Travel</li>
+                  </ul>
+                  <p class=''> To give some data in status you have some of the options we have :</p>
+                  <ul class="">
+                    <li class="">PUBLISHED</li>
+                    <li class="">DRAFT</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Updating Posts</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post</p>
+                </td>
+                <td>
+                  <p class="">For updating your blogs you have to provide blog id in url <mark>updatepost/blogid</mark> </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Deleting Posts</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post</p>
+                </td>
+                <td>
+                  <p class="">For Deleting your blogs you have to provide blog id in url <mark>deletepost/blogid</mark> </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Posts Achivement Details</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post Achivements</p>
+                </td>
+                <td>
+                  <p class="">For getting blogs achivements (like , comment , share) you have to provide blog id in url <mark>postachivementdetail/blogid</mark> </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Updating Posts Achivement Details</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Post Achivements</p>
+                </td>
+                <td>
+                  <p class="">For updating blogs achivements (like , comment , share) you have to provide blog id in url <mark>postachivementupdate/blogid</mark> </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Comments List Veiw</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Comments</p>
+                </td>
+                <td>
+                  <p class="">For seening blogs comments you have to provide blog id in url <mark>comments/blogid</mark> </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Comments List Veiw</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Comments</p>
+                </td>
+                <td>
+                  <p class="">For seening blogs comments you have to provide blog id in url <mark>comments/blogid</mark> </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Creating Comments</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Comments</p>
+                </td>
+                <td>
+                  <p class="">For creating comments under the blogs or posts you have to provide blog id in url <mark>comments/blogid</mark> and comments have some field are: </p>
+                  <ul class="">
+                    <li class="">post_id</li>
+                    <li class="">comment</li>
+                    <li class="">comment</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-md-center align-items-center">
+                    <div class="flex-column  bd-highlight text-center">
+                      <p class="h5 ">Delete Comments</p>
+                      <a class="btn btn-primary " href=""> Explore </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <p class="h6">Comments</p>
+                </td>
+                <td>
+                  <p class="">For Delete comments in blogs you have to provide blog id and comment id in url <mark>comments/blogid/commentid</mark> </p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+        <div id="footer">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="https://www.svgrepo.com/show/261816/blogger.svg" class="bi" width="24" height="24">
+              </a>
+              <span class="text-muted">&copy; 2021 Company, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/vaibhav-sharma-0481b2225/"><img src="https://www.svgrepo.com/show/157006/linkedin.svg" class="bi" width="24" height="24"></a></li>
+              <li class="ms-3"><a class="text-muted" href="https://github.com/iamvaibhav31"><img src="https://www.svgrepo.com/show/387672/github.svg" class="bi" width="24" height="24"></a></li>
+            </ul>
+          </footer>
+          {% comment %} <img src="https://www.svgrepo.com/show/157006/linkedin.svg" class="bi" width="24" height="24"> {% endcomment %}
+          {% comment %}  {% endcomment %}
+        </div>
+
+    </div>
+
+  </body>
+</html>

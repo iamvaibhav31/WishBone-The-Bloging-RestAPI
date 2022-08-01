@@ -1,0 +1,36 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('postsearchveiw', post_searcheveiw.as_view(),
+         name="post search list veiw"),
+    path('posts', post_listveiw.as_view(), name="post list veiw"),
+    path('createposts/', post_createveiw.as_view(), name="post create post"),
+    path('postdetails/<str:pk>', post_detailveiw.as_view(), name="post detail veiw"),
+    path('deletepost/<str:pk>', post_updatedeleteveiw.as_view(),
+         name="post delete veiw"),
+    path('updatepost/<str:pk>', post_updatedeleteveiw.as_view(),
+         name="post update veiw"),
+    path('postcategoriesveiw/<str:catagorizer>',
+         postcategories_listveiw.as_view(), name="post categories list veiw"),
+    path('poststatusveiw/<str:state>',
+         poststatus_listveiw.as_view(), name="post status list veiw"),
+    # path('postachivement-veiw',postAchivements_listveiw.as_view(),name="post achivement list veiw"),
+    path('postachivementdetail/<str:pk>',
+         postAchivements_detailveiw.as_view(), name="post achivement detail veiw"),
+    path('postachivementupdate/<str:pk>',
+         postAchivements_updateveiw.as_view(), name="post achivement update veiw"),
+    path('comments/<str:postid>/',
+         comment_listveiw.as_view(), name="comment list veiw"),
+    path('createcomments/<str:postid>',
+         comment_createveiw.as_view(), name="post create post"),
+    path('deletecomment/<int:pk>/<str:postid>/',
+         comment_deleteveiw.as_view(), name="post detail veiw"),
+    path('author-info/<int:id>', PostAutherInfo.as_view(),
+         name="post Author info veiw"),
+    path('postsofspecificanddata/<int:id>', UserCompleteInfo.as_view(),
+         name="post user info veiw"),
+    path('userSmall-info/<int:id>', usersmallInfo.as_view(),
+         name="post user info veiw"),
+]
+# UserCompleteInfo
